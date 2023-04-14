@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <script>
+function enquanto() {
+    var usuario;
+    var senha;
+    var recorrente;
+    recorrente=true;
+
+    
+    while (recorrente == true) {
+        window.alert("Digite se usuario");
+        usuario = window.prompt('Enter a value for usuario');
+        if (usuario == "Guilherme") {
+            window.alert("digite sua senha");
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                window.alert("login aprovado");
+                recorrente = false;
+            } else {
+                window.alert("Senha incorreta");
+            }
+        } else {
+            window.alert("usuario incorreto");
+        }
+    }
+    do {
+    } while (recorrente == true);
+}
+
+function faca() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        window.alert("Digite se usuario");
+        usuario = window.prompt('Enter a value for usuario');
+        if (usuario == "Guilherme") {
+            window.alert("digite sua senha");
+            senha = window.prompt('Enter a value for senha');
+            if (senha == "1234") {
+                window.alert("login aprovado");
+                recorrente = false;
+            } else {
+                window.alert("Senha incorreta");
+            }
+        } else {
+            window.alert("usuario incorreto");
+        }
+    } while (recorrente == true);
+}
+
+</script>
+
+<body>
+<button onclick="enquanto()">enquanto</button>
+<button onclick="faca()">faça</button>
+
+</body>
+
+
+</html>
